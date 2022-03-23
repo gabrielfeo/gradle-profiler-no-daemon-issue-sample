@@ -1,0 +1,7 @@
+scenario,configure-assemble-app-unchanged-without-cache
+version,Gradle 7.4.1
+tasks,:app:assemble
+value,total execution time
+warm-up build #1,5521
+measured build #1,4755
+measured build #2,4896

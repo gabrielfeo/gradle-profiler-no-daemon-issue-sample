@@ -1,0 +1,267 @@
+
+* Started at 2022-03-23T16:36:33.816525Z
+
+* Settings
+Project dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample
+Output dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+Targets: [configure-assemble-app-unchanged-with-cache]
+Warm-ups: 1
+Builds: 2
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-7.4.1-bin.zip
+..............................................................................................................
+> Task :buildSrc:extractPluginRequests UP-TO-DATE
+> Task :buildSrc:generatePluginAdapters UP-TO-DATE
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:compileGroovyPlugins UP-TO-DATE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+
+> Task :help
+
+Welcome to Gradle 7.4.1.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see more detail about a task, run gradle help --task <task>
+
+To see a list of command-line options, run gradle --help
+
+For more detail on using Gradle, see https://docs.gradle.org/7.4.1/userguide/command_line_interface.html
+
+For troubleshooting, visit https://help.gradle.org
+
+BUILD SUCCESSFUL in 19s
+10 actionable tasks: 1 executed, 9 up-to-date
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+
+Welcome to Gradle 7.4.1!
+
+Here are the highlights of this release:
+ - Aggregated test and JaCoCo reports
+ - Marking additional test source directories as tests in IntelliJ
+ - Support for Adoptium JDKs in Java toolchains
+
+For more details see https://docs.gradle.org/7.4.1/release-notes.html
+
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: configure-assemble-app-unchanged-with-cache using Gradle 7.4.1
+  Gradle 7.4.1 (/Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1)
+  Run using: `gradle` command with --no-daemon
+  Run: run tasks :app:assemble
+  Cleanup: do nothing
+  Gradle args: [--configuration-cache, --dry-run]
+  Build changes: []
+  Warm-ups: 1
+  Builds: 2
+
+* Running scenario configure-assemble-app-unchanged-with-cache using Gradle 7.4.1 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 7.4.1
+Java home: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+OS: mac os x x86_64 11.2
+JVM args:
+  --add-opens
+  java.base/java.util=ALL-UNNAMED
+  --add-opens
+  java.base/java.lang=ALL-UNNAMED
+  --add-opens
+  java.base/java.lang.invoke=ALL-UNNAMED
+  --add-opens
+  java.base/java.util=ALL-UNNAMED
+  --add-opens
+  java.prefs/java.util.prefs=ALL-UNNAMED
+  --add-opens
+  java.prefs/java.util.prefs=ALL-UNNAMED
+  --add-opens
+  java.base/java.nio.charset=ALL-UNNAMED
+  --add-opens
+  java.base/java.net=ALL-UNNAMED
+  --add-opens
+  java.base/java.util.concurrent.atomic=ALL-UNNAMED
+  -XX:MaxMetaspaceSize=256m
+  -XX:+HeapDumpOnOutOfMemoryError
+  -Xms256m
+  -Xmx512m
+  -Dfile.encoding=UTF-8
+  -Duser.country=BR
+  -Duser.language=en
+  -Duser.variant
+  -Dorg.gradle.profiler.scenario=configure-assemble-app-unchanged-with-cache
+Gradle args:
+  --gradle-user-home
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+  --configuration-cache
+  --dry-run
+  -I
+  /private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle
+
+* Running cleanup for warm-up build #1
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+No Gradle daemons are running.
+
+* Running warm-up build #1
+GRADLE_OPTS: "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.base/java.lang=ALL-UNNAMED" "--add-opens" "java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.base/java.nio.charset=ALL-UNNAMED" "--add-opens" "java.base/java.net=ALL-UNNAMED" "--add-opens" "java.base/java.util.concurrent.atomic=ALL-UNNAMED" "-XX:MaxMetaspaceSize=256m" "-XX:+HeapDumpOnOutOfMemoryError" "-Xms256m" "-Xmx512m" "-Dfile.encoding=UTF-8" "-Duser.country=BR" "-Duser.language=en" "-Duser.variant" "-Dorg.gradle.profiler.scenario=configure-assemble-app-unchanged-with-cache" "-Dorg.gradle.profiler.phase=WARM_UP" "-Dorg.gradle.profiler.phase.display.name=warm-up" "-Dorg.gradle.profiler.number=1" "-Dorg.gradle.profiler.step=BUILD"
+JAVA_HOME: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1 --configuration-cache --dry-run -I /private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle :app:assemble -Dorg.gradle.daemon=false -Dorg.gradle.jvmargs
+Configuration cache is an incubating feature.
+Calculating task graph as configuration cache cannot be reused because init script '../../../../../private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle' has been added.
+> Task :buildSrc:extractPluginRequests UP-TO-DATE
+> Task :buildSrc:generatePluginAdapters UP-TO-DATE
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:compileGroovyPlugins UP-TO-DATE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+:list:compileJava SKIPPED
+:utilities:compileJava SKIPPED
+:app:compileJava SKIPPED
+:app:processResources SKIPPED
+:app:classes SKIPPED
+:app:jar SKIPPED
+:list:processResources SKIPPED
+:list:classes SKIPPED
+:list:jar SKIPPED
+:utilities:processResources SKIPPED
+:utilities:classes SKIPPED
+:utilities:jar SKIPPED
+:app:startScripts SKIPPED
+:app:distTar SKIPPED
+:app:distZip SKIPPED
+:app:assemble SKIPPED
+
+BUILD SUCCESSFUL in 6s
+9 actionable tasks: 9 up-to-date
+Configuration cache entry stored.
+Used daemon with pid 64215
+Execution time 7004 ms
+
+* Using args for instrumented builds:
+
+* Running cleanup for measured build #1
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+No Gradle daemons are running.
+
+* Running measured build #1
+GRADLE_OPTS: "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.base/java.lang=ALL-UNNAMED" "--add-opens" "java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.base/java.nio.charset=ALL-UNNAMED" "--add-opens" "java.base/java.net=ALL-UNNAMED" "--add-opens" "java.base/java.util.concurrent.atomic=ALL-UNNAMED" "-XX:MaxMetaspaceSize=256m" "-XX:+HeapDumpOnOutOfMemoryError" "-Xms256m" "-Xmx512m" "-Dfile.encoding=UTF-8" "-Duser.country=BR" "-Duser.language=en" "-Duser.variant" "-Dorg.gradle.profiler.scenario=configure-assemble-app-unchanged-with-cache" "-Dorg.gradle.profiler.phase=MEASURE" "-Dorg.gradle.profiler.phase.display.name=measured" "-Dorg.gradle.profiler.number=1" "-Dorg.gradle.profiler.step=BUILD"
+JAVA_HOME: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1 --configuration-cache --dry-run -I /private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle :app:assemble -Dorg.gradle.daemon=false -Dorg.gradle.jvmargs
+Configuration cache is an incubating feature.
+Reusing configuration cache.
+:list:compileJava SKIPPED
+:utilities:compileJava SKIPPED
+:app:compileJava SKIPPED
+:app:processResources SKIPPED
+:app:classes SKIPPED
+:app:jar SKIPPED
+:list:processResources SKIPPED
+:list:classes SKIPPED
+:list:jar SKIPPED
+:utilities:processResources SKIPPED
+:utilities:classes SKIPPED
+:utilities:jar SKIPPED
+:app:startScripts SKIPPED
+:app:distTar SKIPPED
+:app:distZip SKIPPED
+:app:assemble SKIPPED
+
+BUILD SUCCESSFUL in 3s
+Configuration cache entry reused.
+Used daemon with pid 64215
+Execution time 3703 ms
+
+* Running cleanup for measured build #2
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+No Gradle daemons are running.
+
+* Running measured build #2
+GRADLE_OPTS: "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.base/java.lang=ALL-UNNAMED" "--add-opens" "java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.base/java.nio.charset=ALL-UNNAMED" "--add-opens" "java.base/java.net=ALL-UNNAMED" "--add-opens" "java.base/java.util.concurrent.atomic=ALL-UNNAMED" "-XX:MaxMetaspaceSize=256m" "-XX:+HeapDumpOnOutOfMemoryError" "-Xms256m" "-Xmx512m" "-Dfile.encoding=UTF-8" "-Duser.country=BR" "-Duser.language=en" "-Duser.variant" "-Dorg.gradle.profiler.scenario=configure-assemble-app-unchanged-with-cache" "-Dorg.gradle.profiler.phase=MEASURE" "-Dorg.gradle.profiler.phase.display.name=measured" "-Dorg.gradle.profiler.number=2" "-Dorg.gradle.profiler.step=BUILD"
+JAVA_HOME: /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1 --configuration-cache --dry-run -I /private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle :app:assemble -Dorg.gradle.daemon=false -Dorg.gradle.jvmargs
+Configuration cache is an incubating feature.
+Reusing configuration cache.
+:list:compileJava SKIPPED
+:utilities:compileJava SKIPPED
+:app:compileJava SKIPPED
+:app:processResources SKIPPED
+:app:classes SKIPPED
+:app:jar SKIPPED
+:list:processResources SKIPPED
+:list:classes SKIPPED
+:list:jar SKIPPED
+:utilities:processResources SKIPPED
+:utilities:classes SKIPPED
+:utilities:jar SKIPPED
+:app:startScripts SKIPPED
+:app:distTar SKIPPED
+:app:distZip SKIPPED
+:app:assemble SKIPPED
+
+BUILD SUCCESSFUL in 3s
+Configuration cache entry reused.
+Used daemon with pid 64215
+Execution time 3503 ms
+
+* Stopping daemons
+Running command /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1/bin/gradle --stop --gradle-user-home /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+No Gradle daemons are running.
+java.lang.RuntimeException: Gradle daemon was reused but should not be reused.
+	at org.gradle.profiler.GradleScenarioInvoker.checkPid(GradleScenarioInvoker.java:195)
+	at org.gradle.profiler.GradleScenarioInvoker.run(GradleScenarioInvoker.java:154)
+	at org.gradle.profiler.GradleScenarioInvoker.run(GradleScenarioInvoker.java:22)
+	at org.gradle.profiler.Main.invoke(Main.java:126)
+	at org.gradle.profiler.Main.run(Main.java:86)
+	at org.gradle.profiler.Main.main(Main.java:25)
+
+* Results written to /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out/benchmark.csv
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out/benchmark.html
+

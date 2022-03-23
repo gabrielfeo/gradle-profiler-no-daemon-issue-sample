@@ -1,0 +1,226 @@
+--------Profiler with --configuration-cache + --dry-run
+Problem: all builds use the same daemon
+
+* Writing results to /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out
+
+* Settings
+Project dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample
+Output dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-1
+Targets: [configure-assemble-app-unchanged-with-cache]
+Warm-ups: 1
+Builds: 2
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-7.4.1-bin.zip
+..............................................................................................................
+
+* Stopping daemons
+
+* Scenarios
+Scenario: configure-assemble-app-unchanged-with-cache using Gradle 7.4.1
+  Gradle 7.4.1 (/Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-1/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1)
+  Run using: `gradle` command with --no-daemon
+  Run: run tasks :app:assemble
+  Cleanup: do nothing
+  Gradle args: [--configuration-cache, --dry-run]
+  Build changes: []
+  Warm-ups: 1
+  Builds: 2
+
+* Running scenario configure-assemble-app-unchanged-with-cache using Gradle 7.4.1 (scenario 1/1)
+
+* Stopping daemons
+
+* Running cleanup for warm-up build #1
+
+* Stopping daemons
+
+* Running warm-up build #1
+Execution time 7004 ms
+
+* Running cleanup for measured build #1
+
+* Stopping daemons
+
+* Running measured build #1
+Execution time 3703 ms
+
+* Running cleanup for measured build #2
+
+* Stopping daemons
+
+* Running measured build #2
+Execution time 3503 ms
+
+* Stopping daemons
+java.lang.RuntimeException: Gradle daemon was reused but should not be reused.
+	at org.gradle.profiler.GradleScenarioInvoker.checkPid(GradleScenarioInvoker.java:195)
+	at org.gradle.profiler.GradleScenarioInvoker.run(GradleScenarioInvoker.java:154)
+	at org.gradle.profiler.GradleScenarioInvoker.run(GradleScenarioInvoker.java:22)
+	at org.gradle.profiler.Main.invoke(Main.java:126)
+	at org.gradle.profiler.Main.run(Main.java:86)
+	at org.gradle.profiler.Main.main(Main.java:25)
+
+* Results written to /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out/benchmark.csv
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out/benchmark.html
+
+-e 
+
+
+--------Profiler with --no-configuration-cache + --dry-run
+Has expected behavior, each build ran in a new daemon
+
+* Writing results to /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out-2
+
+* Settings
+Project dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample
+Output dir: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out-2
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/./gradle-user-home-2
+Targets: [configure-assemble-app-unchanged-without-cache]
+Warm-ups: 1
+Builds: 2
+
+* Inspecting the build using its default Gradle version
+Downloading https://services.gradle.org/distributions/gradle-7.4.1-bin.zip
+..............................................................................................................
+
+* Stopping daemons
+
+* Scenarios
+Scenario: configure-assemble-app-unchanged-without-cache using Gradle 7.4.1
+  Gradle 7.4.1 (/Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/gradle-user-home-2/wrapper/dists/gradle-7.4.1-bin/58kw26xllvsiedyf3nujyarhn/gradle-7.4.1)
+  Run using: `gradle` command with --no-daemon
+  Run: run tasks :app:assemble
+  Cleanup: do nothing
+  Gradle args: [--no-configuration-cache, --dry-run]
+  Build changes: []
+  Warm-ups: 1
+  Builds: 2
+
+* Running scenario configure-assemble-app-unchanged-without-cache using Gradle 7.4.1 (scenario 1/1)
+
+* Stopping daemons
+
+* Running cleanup for warm-up build #1
+
+* Stopping daemons
+
+* Running warm-up build #1
+Execution time 5521 ms
+
+* Running cleanup for measured build #1
+
+* Stopping daemons
+
+* Running measured build #1
+Execution time 4755 ms
+
+* Running cleanup for measured build #2
+
+* Stopping daemons
+
+* Running measured build #2
+Execution time 4896 ms
+
+* Stopping daemons
+
+* Results written to /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out-2
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out-2/benchmark.csv
+  /Users/gabrieldeaguiarfeo/Projects/ifood/no-daemon-issue-sample/profile-out-2/benchmark.html
+
+-e 
+
+
+--------Manual builds with --configuration-cache + --dry-run (does not occur)
+Has expected behavior, each ran in a new daemon
+Running build #1
+
+Welcome to Gradle 7.4.1!
+
+Here are the highlights of this release:
+ - Aggregated test and JaCoCo reports
+ - Marking additional test source directories as tests in IntelliJ
+ - Support for Adoptium JDKs in Java toolchains
+
+For more details see https://docs.gradle.org/7.4.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+Configuration cache is an incubating feature.
+Calculating task graph as configuration cache cannot be reused because init script '../../../../../private/var/folders/ms/y99xtb256v58pz0pxm3r27fc0000gp/T/gradleProfiler12806193937633132016.gradle' has been removed.
+> Task :buildSrc:extractPluginRequests UP-TO-DATE
+> Task :buildSrc:generatePluginAdapters UP-TO-DATE
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:compileGroovyPlugins UP-TO-DATE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+:list:compileJava SKIPPED
+:utilities:compileJava SKIPPED
+:app:compileJava SKIPPED
+:app:processResources SKIPPED
+:app:classes SKIPPED
+:app:jar SKIPPED
+:list:processResources SKIPPED
+:list:classes SKIPPED
+:list:jar SKIPPED
+:utilities:processResources SKIPPED
+:utilities:classes SKIPPED
+:utilities:jar SKIPPED
+:app:startScripts SKIPPED
+:app:distTar SKIPPED
+:app:distZip SKIPPED
+:app:assemble SKIPPED
+
+BUILD SUCCESSFUL in 22s
+9 actionable tasks: 9 up-to-date
+Configuration cache entry stored.
+Running build #2
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+Configuration cache is an incubating feature.
+Reusing configuration cache.
+:list:compileJava SKIPPED
+:utilities:compileJava SKIPPED
+:app:compileJava SKIPPED
+:app:processResources SKIPPED
+:app:classes SKIPPED
+:app:jar SKIPPED
+:list:processResources SKIPPED
+:list:classes SKIPPED
+:list:jar SKIPPED
+:utilities:processResources SKIPPED
+:utilities:classes SKIPPED
+:utilities:jar SKIPPED
+:app:startScripts SKIPPED
+:app:distTar SKIPPED
+:app:distZip SKIPPED
+:app:assemble SKIPPED
+
+BUILD SUCCESSFUL in 4s
+Configuration cache entry reused.
+2 single-use daemons were started:
+daemon-64693.out.log
+daemon-64729.out.log
+registry.bin
+registry.bin.lock
